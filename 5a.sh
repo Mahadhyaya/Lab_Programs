@@ -1,5 +1,8 @@
 <<com
-  Shell script to display creation time of the file if exists
+
+Write a shell script that accepts filename as argument and display its creation time if file
+exist and if does not send output error message.
+
 com
 
 filename=$1
