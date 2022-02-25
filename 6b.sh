@@ -1,5 +1,8 @@
 <<com
-  Shell script to find the files which are having more than 10 characters
+
+Write a shell script to list all the files in a directory whose filename is at least 10 characters.
+(use expr command to check the length).
+
 com
 
 for i in `ls`
