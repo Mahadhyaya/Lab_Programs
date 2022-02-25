@@ -1,5 +1,9 @@
 <<com
-  Shell script to create files within the directories repeatedly
+
+Write a shell script that accepts a path name and creates all the components in that path
+name as directories. For example, if the script is named as mpc, then the command mpc a/b/c/d
+should create sub-directories a, a/b, a/b/c, a/b/c/d.
+
 com
 
 if [ $# -ne 0 ]
