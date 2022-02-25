@@ -1,6 +1,6 @@
 if [ $# -ne 0 ]
 then 
-p=`echo $1 | tr "/" " "`
+p=`echo $1 | tr "/" " "`        #set -- `$1 | tr "/" " "`
 for i in $p
 do
 mkdir $i
