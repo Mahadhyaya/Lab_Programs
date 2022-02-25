@@ -1,3 +1,7 @@
+<<com
+  Shell script to display the permission, linkcount and modification time
+com
+
 if [ -e $1 ]
 then
 set -- `ls -ld $1`
