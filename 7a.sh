@@ -1,3 +1,7 @@
+<<com
+  Shell script to display greetings as per the user login time
+com
+
 set -- `who`
 user=$1
 set -- `echo $4 |tr ":" " "`             # or ${variablename%:*}
