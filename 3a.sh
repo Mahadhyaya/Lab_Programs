@@ -1,5 +1,8 @@
 <<com
-  Shell script to display the permission, linkcount and modification time
+
+Create a script file called file properties that reads a filename entered and outputs it
+properties..
+
 com
 
 if [ -e $1 ]
