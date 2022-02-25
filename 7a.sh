@@ -1,6 +1,6 @@
 set -- `who`
 user=$1
-set -- `echo $4 |tr ":" " "`
+set -- `echo $4 |tr ":" " "`             # or ${variablename%:*}
 h=$1
 if [ $h -ge 4 ] && [ $h -lt 12 ]
 then
