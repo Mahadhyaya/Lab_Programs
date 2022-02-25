@@ -1,3 +1,7 @@
+<<com
+  Shell script to display creation time of the file if exists
+com
+
 filename=$1
 if [ -e $filename ]
 then
