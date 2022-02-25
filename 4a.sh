@@ -1,5 +1,8 @@
 <<com
-  Shell script to convert lowercase character to uppercase of the file and display it
+
+Write a shell script that accept one or more file names as argument and convert all of them
+to uppercase, provided they exists in current directory.
+
 com
 
 for i in $*
