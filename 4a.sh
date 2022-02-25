@@ -1,3 +1,7 @@
+<<com
+  Shell script to convert lowercase character to uppercase of the file and display it
+com
+
 for i in $*
 do
 if [ -f $i ]
