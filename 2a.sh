@@ -1,3 +1,7 @@
+<<com
+  Shell script check and compare file permission and display it
+com
+
 echo -n "Enter first filename:"
 read file1
 if [ -e $file1 ]
