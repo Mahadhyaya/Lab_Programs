@@ -10,4 +10,4 @@
 
 6b. Write a shell script to list all the files in a directory whose filename is at least 10 characters. (use expr command to check the length).
 
-7a. Write a shell script that gets executed and displays the message either “Good Morning” or “Good Afternoon” or “Good Evening” depending upon time at which the user logs in.
+7a. Write a shell script that gets executed and displays the message either “Good Morning” or “Good Afternoon” or “Good Evening” depending upon time at which the user logs into System.
