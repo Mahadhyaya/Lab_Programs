@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-void read_matrix(int n)         {        
-   int i,j;          
+void read_matrix(int n) {        
+	int i,j;          
   for(i=0;i<n;i++)             {         
      for(j=0;j<n;j++)                {           
        scanf("%d",&cost[i][j]);                             
@@ -22,7 +22,8 @@ void print_matrix(int n)         {
 
 int d[6];
 int p[6];
-void diji(int source)    {       
+void diji(int source)    {  
+	int aSource = source;     
   int i,j,u,v,min;  
    int s[10];     
 for(i=0;i<n;i++)      {      
@@ -30,22 +31,34 @@ for(i=0;i<n;i++)      {
 s[i]=0;      
  p[i]=source;   
 }
-s[source] = 1;
-int min = d[source];
+//s[source] = 1;
+int min = 0;
+
 for (int j = 0; j < n - 1; j++) {
-	int max = 99;
-	
-d[j]=cost[source][j]; 
+int max = min + d[source];
+	min= 99;
+for (int l = 0; l < n; l++) {	
+d[l]=cost[source][l]; 
+}
+int l = 0;
 	
 		for (int k = 0; k < n; k++) {
 if (s[k] == 0) {
-			if (d[k] + min < max {
-			min = d[k];
+			if (d[k] + max < min){
+			min = d[k] + max;
 			s[k] = 1;
+			l = k;
+			p[k] = source;
 			source = k;		
 }
 }
 		}
+ int i;           
+i=l;      
+     while(i!= aSource) {    
+printf("%d<--",i);    i=p[i];           
+}
+           printf("%d = %d",i,min);
 	
 
 }
